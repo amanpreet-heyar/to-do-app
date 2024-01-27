@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form-1">
+        <div>
+        <label for="heading"  class="one" >Heading : </label>
+        <input type="text" id="heading"  class="Heading" required><br></div>
+        <div>
+        <label for="description"  class="one" style="position: fixed;" >Description : </label>
+        <textarea id="description" class="Description" required ></textarea><br>
+    </div>
+    <div>
+        <input type="button" onclick="addTodo()" value="Add" class="btn">
+        <input type="button" onclick="reset()" value="Reset" class="btn">
+    </div>
+
+    </form>
+    <div id="error" style="margin-left: 280px;"></div>
+    <span id="error2" style="margin-left: 1000px;"></span>
+    <div>
+    <p class="note">Notes</p>
+    <div id="storage" class="para">
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

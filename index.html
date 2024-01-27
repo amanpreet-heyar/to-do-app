@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="create-task">
+        <form id="my-form" onsubmit="onSubmitForm(event)" onreset="">
+          <div class="input">
+            <label for="title">Heading</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="your heading"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="body">Description</label>
+            <textarea
+              placeholder="your Description"
+              name="body"
+              id="body"
+            ></textarea>
+          </div>
+          <div class="actions">
+            <button type="submit" name="submitButton">Add</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+      <div id="tasks"></div>
+    </div>
+    <script  src="js/main.js" ></script>
+    <script src="js/action.js"></script>
+  </body>
+</html>
